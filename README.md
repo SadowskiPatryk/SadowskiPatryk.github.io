@@ -39,4 +39,7 @@ A lightweight, responsive, and evergreen personal portfolio/resume website built
 ├── og-image.jpg            # Open Graph social media preview card
 ├── llms.txt                # Context summary for AI agents
 ├── robots.txt              # Web crawler directives
-└── sitemap.xml             # Search engine sitemap
+├── sitemap.xml             # Search engine sitemap
+├── CNAME                   # GitHub Pages custom domain configuration
+├── LICENSE                 # Repository license
+└── README.md               # This file
