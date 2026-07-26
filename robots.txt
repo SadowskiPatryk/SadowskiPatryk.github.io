@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://patryk-sadowski.pl/sitemap.xml

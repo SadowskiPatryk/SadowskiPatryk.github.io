@@ -1,0 +1,28 @@
+# Patryk Sadowski - Portfolio & Resume
+
+## About
+Patryk Sadowski is a Computer Science engineering student at Adam Mickiewicz University in Poznań (Graduation: 02/2027), combining data analytics with software engineering. He builds scalable tools that optimize business and research processes, reduces manual overhead, and introduces automation in complex corporate workflows.
+
+## Tech Stack
+* **Data Engineering & Analytics:** Python, SQL, Snowflake, Power BI, SAP ERP
+* **Software Development:** FastAPI, .NET, Git
+* **AI & Machine Learning:** Scikit-learn, AI Implementation, Computer Vision
+* **Infrastructure & Hardware:** Docker, IoT, Cybersecurity, ESP32
+
+## Experience
+* **Europe Inventory Operator (Intern) @ Signify** (01/2026 - Present, Hybrid)
+  He automates reporting workflows, resolves SAP discrepancies, and designs AI-powered applications for goods recognition.
+* **IT Support Specialist (Junior) @ IT sp. z o.o.** (08/2023 - Present, Remote)
+  He provides remote technical support, manages Windows Server administration, and handles complex system and hardware troubleshooting.
+
+## Key Projects
+* **CT Scan Visualization (Engineering Thesis):** Specialized full-stack software (Python, Flutter, Dart) for 3D radiographic data visualization.
+* **Warehouse AI Vision (Signify):** AI application using FastAPI and Computer Vision to detect stock discrepancies via mobile devices.
+* **Forest Litter Moisture Predictive Model:** IoT ecosystem using Python and ESP32 with Scikit-learn predictive modeling.
+* **Commercial WordPress Websites:** End-to-end development and self-hosted server administration for B2B clients (e.g., fhmajka.pl).
+
+## Contact
+Email: patryk.sadowski03@gmail.com
+Github: https://github.com/SadowskiPatryk
+Linkedin: https://www.linkedin.com/in/patryk-sadowski3
+Website: https://patryk-sadowski.pl
