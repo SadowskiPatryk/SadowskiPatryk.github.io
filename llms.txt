@@ -1,28 +1,73 @@
-# Patryk Sadowski - Portfolio & Resume
+# Patryk Sadowski - Portfolio & Resume Summary
 
-## About
-Patryk Sadowski is a Computer Science engineering student at Adam Mickiewicz University in Poznań (Graduation: 02/2027), combining data analytics with software engineering. He builds scalable tools that optimize business and research processes, reduces manual overhead, and introduces automation in complex corporate workflows.
+> Computer Science student combining data analytics, software engineering, and process automation. Specialized in building scalable tools, AI implementations, and IoT solutions that optimize business and research workflows.
 
-## Tech Stack
-* **Data Engineering & Analytics:** Python, SQL, Snowflake, Power BI, SAP ERP
-* **Software Development:** FastAPI, .NET, Git
-* **AI & Machine Learning:** Scikit-learn, AI Implementation, Computer Vision
-* **Infrastructure & Hardware:** Docker, IoT, Cybersecurity, ESP32
+## Profile Summary
+* **Full Name:** Patryk Sadowski
+* **Role:** Data Scientist, Software Engineer & IT Specialist
+* **Education:** Bachelor of Engineering in Computer Science at Adam Mickiewicz University in Poznań (UAM) (10/2023 - 02/2027)
+* **Location:** Poland
+* **Website:** https://patryk-sadowski.pl
+* **Email:** patryk.sadowski03@gmail.com
+* **GitHub:** https://github.com/SadowskiPatryk
+* **LinkedIn:** https://www.linkedin.com/in/patryk-sadowski3
 
-## Experience
-* **Europe Inventory Operator (Intern) @ Signify** (01/2026 - Present, Hybrid)
-  He automates reporting workflows, resolves SAP discrepancies, and designs AI-powered applications for goods recognition.
-* **IT Support Specialist (Junior) @ IT sp. z o.o.** (08/2023 - Present, Remote)
-  He provides remote technical support, manages Windows Server administration, and handles complex system and hardware troubleshooting.
+---
 
-## Key Projects
-* **CT Scan Visualization (Engineering Thesis):** Specialized full-stack software (Python, Flutter, Dart) for 3D radiographic data visualization.
-* **Warehouse AI Vision (Signify):** AI application using FastAPI and Computer Vision to detect stock discrepancies via mobile devices.
-* **Forest Litter Moisture Predictive Model:** IoT ecosystem using Python and ESP32 with Scikit-learn predictive modeling.
-* **Commercial WordPress Websites:** End-to-end development and self-hosted server administration for B2B clients (e.g., fhmajka.pl).
+## Technical Skills & Core Competencies
+* **Data Engineering & Analytics:** Python, SQL, Snowflake, Power BI, SAP ERP, Data Processing
+* **Software Development:** FastAPI, .NET, Flutter, Dart, Git, Full-stack Web Development
+* **AI & Machine Learning:** Scikit-learn, Computer Vision, AI Implementation, Predictive Modeling
+* **Infrastructure, Hardware & Systems:** Docker, IoT, ESP32, Windows Server Administration, Cybersecurity, Self-hosting
 
-## Contact
-Email: patryk.sadowski03@gmail.com
-Github: https://github.com/SadowskiPatryk
-Linkedin: https://www.linkedin.com/in/patryk-sadowski3
-Website: https://patryk-sadowski.pl
+---
+
+## Professional Experience
+
+### Europe Inventory Operator (Intern) — Signify
+* **Period:** 01/2026 - Present
+* **Location:** Piła, Poland (Hybrid)
+* **Key Achievements & Responsibilities:**
+  * Automating reporting workflows and delivery tracking using Power BI and Snowflake.
+  * Identifying and resolving SAP ERP system errors and inventory discrepancies.
+  * Designing and developing internal AI-powered applications for automated goods recognition.
+
+### IT Support Specialist (Junior) — IT sp. z o.o.
+* **Period:** 08/2023 - Present
+* **Location:** Poznań, Poland (Remote)
+* **Key Achievements & Responsibilities:**
+  * Providing complex remote technical support for court bailiffs and legal offices.
+  * Administering and maintaining Windows Server environments.
+  * Diagnosing and resolving complex system, network, and hardware issues.
+
+---
+
+## Featured Projects
+
+### 1. CT Scan Visualization (Engineering Thesis for NCBJ)
+* **Status:** Work in Progress
+* **Role/Context:** Engineering Thesis developed for the National Centre for Nuclear Research (NCBJ / Narodowe Centrum Badań Jądrowych).
+* **Tech Stack:** Python, Flutter, Dart, Full-stack, 3D Rendering, Radiographic Processing.
+* **Description:** Specialized software solution designed to process, render, and visualize 3D industrial CT scans. Features an interactive interface enabling precise 3D radiographic data analysis.
+
+### 2. Warehouse AI Vision (Signify Internal Project)
+* **Status:** Work in Progress
+* **Tech Stack:** Python, FastAPI, Computer Vision, Machine Learning.
+* **Description:** AI-powered mobile solution for automated goods recognition. Leverages computer vision via FastAPI to detect and resolve stock discrepancies in real-time.
+
+### 3. Forest Litter Moisture Predictive Model
+* **Status:** Completed (Academic / Research)
+* **Tech Stack:** ESP32, IoT, Python, Scikit-learn.
+* **Description:** End-to-end IoT ecosystem for environmental monitoring and fire risk assessment. Uses microcontrollers (ESP32) and Scikit-learn predictive modeling to forecast forest litter moisture with high precision.
+
+### 4. Commercial Web Platforms & Infrastructure Management
+* **Status:** Completed / Ongoing Maintenance
+* **Tech Stack:** WordPress, Web Development, Server Administration, Self-hosting.
+* **Description:** End-to-end development, deployment, and ongoing administration of commercial B2B web platforms hosted on custom-built server infrastructure to optimize speed and reliability.
+
+---
+
+## Education History
+
+* **Adam Mickiewicz University in Poznań (UAM)** — Bachelor of Engineering in Computer Science (10/2023 - 02/2027)
+* **Technical High School No. 2 in Wągrowiec** — IT Technician (09/2019 - 05/2023)
