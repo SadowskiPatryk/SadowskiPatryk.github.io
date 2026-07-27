@@ -60,7 +60,13 @@
 * **Tech Stack:** ESP32, IoT, Python, Scikit-learn.
 * **Description:** End-to-end IoT ecosystem for environmental monitoring and fire risk assessment. Uses microcontrollers (ESP32) and Scikit-learn predictive modeling to forecast forest litter moisture with high precision.
 
-### 4. Commercial Web Platforms & Infrastructure Management
+### 4. Interactive Trail Guide for Nature Reserve (Kuźnik Reserve)
+* **Status:** Completed (Academic Project)
+* **Tech Stack:** Python, FastAPI, Text-to-Speech (TTS), QR Code Integration, Self-hosting.
+* **URL:** https://rezerwat-kuznik.duckdns.org/
+* **Description:** Interactive web application designed as a guide for the Kuźnik Nature Reserve in Piła. Users scan QR codes at physical checkpoints along the trail to unlock localized educational content and listen to audio descriptions generated via integrated Text-to-Speech (TTS).
+
+### 5. Commercial Web Platforms & Infrastructure Management
 * **Status:** Completed / Ongoing Maintenance
 * **Tech Stack:** WordPress, Web Development, Server Administration, Self-hosting.
 * **Description:** End-to-end development, deployment, and ongoing administration of commercial B2B web platforms hosted on custom-built server infrastructure to optimize speed and reliability.
