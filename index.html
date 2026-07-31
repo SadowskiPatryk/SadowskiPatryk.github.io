@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="favicon.ico" sizes="any">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <title>Patryk Sadowski | Data Science & Software Engineering</title>
     <meta name="description" content="Portfolio of Patryk Sadowski - Computer Science student combining data analytics with software engineering and process automation.">
@@ -25,38 +25,37 @@
     <meta name="twitter:description" content="Computer Science student combining data analytics with software engineering. Check out my projects and experience.">
     <meta name="twitter:image" content="https://patryk-sadowski.pl/og-image.jpg">
 
-	<meta name="google-site-verification" content="5T8QX271_nsJnuXS1gLs4J1vfpRcXBVwdDQiWvmuy5Y" />
+    <meta name="google-site-verification" content="5T8QX271_nsJnuXS1gLs4J1vfpRcXBVwdDQiWvmuy5Y" />
 
-	<script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "Person",
-	  "name": "Patryk Sadowski",
-	  "url": "https://patryk-sadowski.pl/",
-	  "email": "mailto:patryk.sadowski03@gmail.com",
-	  "jobTitle": "Data Scientist & Software Engineer",
-	  "alumniOf": [
-		{
-		  "@type": "EducationalOrganization",
-		  "name": "Adam Mickiewicz University in Poznań"
-		}
-	  ],
-	  "worksFor": [
-		{
-		  "@type": "Organization",
-		  "name": "Signify"
-		},
-		{
-		  "@type": "Organization",
-		  "name": "IT sp. z o.o."
-		}
-	  ],
-	  "sameAs": [
-		"https://github.com/SadowskiPatryk",
-		"https://www.linkedin.com/in/patryk-sadowski3"
-	  ]
-	}
-	</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Patryk Sadowski",
+      "url": "https://patryk-sadowski.pl/",
+      "jobTitle": "Data Scientist & Software Engineer",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Adam Mickiewicz University in Poznań"
+        }
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Signify"
+        },
+        {
+          "@type": "Organization",
+          "name": "IT sp. z o.o."
+        }
+      ],
+      "sameAs": [
+        "https://github.com/SadowskiPatryk",
+        "https://www.linkedin.com/in/patryk-sadowski3"
+      ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -84,7 +83,28 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 400ms;
         }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        @keyframes shake-glow {
+            0%, 100% { transform: translateX(0) scale(1); box-shadow: none; border-color: inherit; }
+            20%, 60% { transform: translateX(-6px) scale(1); box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); border-color: #ef4444; }
+            40%, 80% { transform: translateX(6px) scale(1); box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); border-color: #ef4444; }
+        }
+        .animate-shake-glow {
+            animation: shake-glow 0.4s ease-in-out;
+        }
     </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body class="bg-slate-50 dark:bg-dark text-slate-800 dark:text-slate-300 font-sans antialiased selection:bg-primary selection:text-white">
 
@@ -106,6 +126,10 @@
                 <a href="#education" class="hover:text-primary dark:hover:text-primary transition-colors">
                     <span class="lang-en">Education</span>
                     <span class="lang-pl">Edukacja</span>
+                </a>
+                <a href="#contact" class="hover:text-primary dark:hover:text-primary transition-colors">
+                    <span class="lang-en">Contact</span>
+                    <span class="lang-pl">Kontakt</span>
                 </a>
             </div>
 
@@ -150,16 +174,16 @@
                     <span class="lang-pl">Pobierz CV</span>
                 </a>
                 
-                <div class="flex items-center gap-4 ml-2">
+                <div class="flex items-center gap-4 ml-2 mt-4 sm:mt-0">
                     <a href="https://github.com/SadowskiPatryk" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors" aria-label="GitHub">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
                     
-                    <a href="mailto:patryk.sadowski03@gmail.com" class="text-slate-500 hover:text-red-500 dark:text-slate-400 dark:hover:text-red-400 transition-colors" aria-label="Email">
+                    <a href="#contact" id="icon-contact" class="text-slate-500 hover:text-red-500 dark:text-slate-400 dark:hover:text-red-400 transition-colors" aria-label="Email">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
                         </svg>
                     </a>
                     
@@ -303,7 +327,7 @@
                         <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Python</span>
                         <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Flutter</span>
                         <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Dart</span>
-						<span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Full-stack</span>
+                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Full-stack</span>
                         <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">3D Rendering</span>
                     </div>
                 </div>
@@ -367,9 +391,7 @@
                     </div>
                 </div>
 
-
-
-				<div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                         <div>
                             <h4 class="text-xl font-bold text-slate-900 dark:text-white">
@@ -400,8 +422,6 @@
                         <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Self-hosting</span>
                     </div>
                 </div>
-
-
 
                 <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
@@ -482,11 +502,79 @@
             </div>
         </section>
 
-        <footer class="text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800 pt-8 mt-12">
+        <section id="contact" class="mb-12 scroll-mt-24">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
+                <span class="lang-en">Contact</span>
+                <span class="lang-pl">Kontakt</span>
+            </h3>
+            
+            <div class="bg-white dark:bg-card-dark p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col items-center text-center">
+                <p class="text-slate-600 dark:text-slate-400 mb-6 max-w-lg">
+                    <span class="lang-en">Interested in collaboration or have a question? Click the button below to verify you are not a robot and reveal my email address.</span>
+                    <span class="lang-pl">Jesteś zainteresowany współpracą lub masz pytanie? Kliknij przycisk poniżej, aby zweryfikować, że nie jesteś robotem i odkryć mój adres email.</span>
+                </p>
+                
+                <button id="btn-contact-bottom" class="bg-primary hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg shadow-sm transition-transform hover:scale-105 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span class="lang-en">Show Email</span>
+                    <span class="lang-pl">Pokaż Email</span>
+                </button>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800 pt-8 mt-4">
             <p>&copy; <span id="current-year"></span> Patryk Sadowski</p>
         </footer>
 
     </main>
+
+    <div id="contact-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-slate-900/50 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div id="contact-modal-content" class="bg-white dark:bg-card-dark p-6 md:p-8 rounded-xl shadow-xl w-full max-w-md mx-4 transform scale-95 opacity-0 transition-all duration-300 relative border border-slate-200 dark:border-slate-700 text-center">
+            <button id="close-modal" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+                <span class="lang-en">Security Check</span>
+                <span class="lang-pl">Weryfikacja</span>
+            </h3>
+            
+            <div id="captcha-section">
+                <p class="text-slate-600 dark:text-slate-400 mb-6">
+                    <span class="lang-en">Please solve this simple math problem to prove you are human:</span>
+                    <span class="lang-pl">Rozwiąż proste zadanie matematyczne, aby udowodnić, że jesteś człowiekiem:</span>
+                </p>
+                
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div id="captcha-question" class="text-xl font-mono font-bold bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
+                    </div>
+                    <input type="number" id="captcha-input" class="w-20 px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primary font-mono text-lg text-center" placeholder="?">
+                </div>
+                
+                <p id="captcha-error" class="text-red-500 text-sm hidden mb-4">
+                    <span class="lang-en">Incorrect answer. Please try again.</span>
+                    <span class="lang-pl">Niepoprawna odpowiedź. Spróbuj ponownie.</span>
+                </p>
+                
+                <button id="verify-captcha" class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    <span class="lang-en">Show Email</span>
+                    <span class="lang-pl">Pokaż email</span>
+                </button>
+            </div>
+
+            <div id="email-section" class="hidden text-center py-4">
+                <div class="mb-4 text-green-500 flex justify-center">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 mb-3">
+                    <span class="lang-en">Verification successful!</span>
+                    <span class="lang-pl">Weryfikacja zakończona sukcesem! Oto mój email:</span>
+                </p>
+                <a href="#" id="revealed-email" class="text-xl font-bold text-primary hover:underline break-all">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script>
         const navAbout = document.getElementById('nav-about');
@@ -570,6 +658,124 @@
                 updateThemeUI(true);
             }
         });
+
+        const btnContactBottom = document.getElementById('btn-contact-bottom');
+        
+        const contactModal = document.getElementById('contact-modal');
+        const contactModalContent = document.getElementById('contact-modal-content');
+        const closeModalBtn = document.getElementById('close-modal');
+        
+        const captchaSection = document.getElementById('captcha-section');
+        const emailSection = document.getElementById('email-section');
+        const captchaQuestion = document.getElementById('captcha-question');
+        const captchaInput = document.getElementById('captcha-input');
+        const captchaError = document.getElementById('captcha-error');
+        const verifyBtn = document.getElementById('verify-captcha');
+        const revealedEmail = document.getElementById('revealed-email');
+        
+        let expectedAnswer = 0;
+
+        function generateCaptcha() {
+            const isAddition = Math.random() > 0.5;
+            let num1, num2;
+            
+            if (isAddition) {
+                num1 = Math.floor(Math.random() * 15) + 1;
+                num2 = Math.floor(Math.random() * 10) + 1;
+                expectedAnswer = num1 + num2;
+                captchaQuestion.textContent = `${num1} + ${num2} =`;
+            } else {
+                num1 = Math.floor(Math.random() * 10) + 1;
+                num2 = Math.floor(Math.random() * 5) + 2;
+                expectedAnswer = num1 * num2;
+                captchaQuestion.textContent = `${num1} * ${num2} =`;
+            }
+            
+            captchaInput.value = '';
+            captchaError.classList.add('hidden');
+            
+            captchaSection.classList.remove('hidden');
+            emailSection.classList.add('hidden');
+        }
+
+        function openModal(e) {
+            if(e) e.preventDefault();
+            generateCaptcha();
+            
+            contactModal.classList.remove('hidden');
+            contactModal.classList.add('flex');
+            
+            setTimeout(() => {
+                contactModal.classList.remove('opacity-0');
+                contactModalContent.classList.remove('scale-95', 'opacity-0');
+                contactModalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            
+            setTimeout(() => {
+                captchaInput.focus();
+            }, 300);
+        }
+
+        function closeModal() {
+            contactModal.classList.add('opacity-0');
+            contactModalContent.classList.remove('scale-100', 'opacity-100');
+            contactModalContent.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                contactModal.classList.remove('flex');
+                contactModal.classList.add('hidden');
+            }, 300);
+        }
+
+        if(btnContactBottom) btnContactBottom.addEventListener('click', openModal);
+        
+        closeModalBtn.addEventListener('click', closeModal);
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) closeModal();
+        });
+
+        function verifyCaptcha() {
+            const userAnswer = parseInt(captchaInput.value, 10);
+            if (userAnswer === expectedAnswer) {
+                const part1 = "contact";
+                const part2 = "patryk-sadowski.pl";
+                const myEmail = `${part1}@${part2}`;
+                
+                revealedEmail.textContent = myEmail;
+                revealedEmail.href = `mailto:${myEmail}`;
+                
+                captchaSection.classList.add('hidden');
+                emailSection.classList.remove('hidden');
+
+                if (typeof confetti === 'function') {
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 },
+                        colors: ['#22c55e', '#16a34a', '#15803d', '#86efac']
+                    });
+                }
+            } else {
+                captchaError.classList.remove('hidden');
+                
+                contactModalContent.classList.remove('animate-shake-glow');
+                void contactModalContent.offsetWidth;
+                contactModalContent.classList.add('animate-shake-glow');
+
+                generateCaptcha();
+                captchaInput.focus();
+            }
+        }
+
+        verifyBtn.addEventListener('click', verifyCaptcha);
+        
+        captchaInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                verifyCaptcha();
+            }
+        });
+
     </script>
 </body>
 </html>
