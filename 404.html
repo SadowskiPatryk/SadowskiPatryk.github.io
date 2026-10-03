@@ -10,18 +10,27 @@
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css?v=fcd06376">
+<link rel="stylesheet" href="/assets/css/site.css?v=e6c37146">
 <script>(function () { var d = document.documentElement; d.classList.add('js'); var t = 'dark'; try { t = localStorage.getItem('portfolio-theme') === 'light' ? 'light' : 'dark'; } catch (e) {} d.setAttribute('data-theme', t); var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute('content', t === 'light' ? '#f8fafc' : '#0f172a'); })();</script>
 </head>
 <body>
-<main class="notfound">
-<p class="eyebrow">Error 404 · Błąd 404</p>
-<h1>404</h1>
-<p>This page doesn't exist (anymore). · Ta strona nie istnieje (już).</p>
-<div class="contact__actions">
-<a class="btn btn--primary" href="/">Home</a>
-<a class="btn btn--ghost" href="/pl/">Strona główna</a>
+<main class="nf" id="main">
+<div class="nf__grid">
+<div class="nf__copy">
+<p class="eyebrow" id="nf-eyebrow">Error 404</p>
+<h1 class="glitch" data-text="404">404</h1>
+<p class="nf__lead" id="nf-lead">Route not found.</p>
+<p class="nf__sub" id="nf-sub">This page doesn't exist. It may have moved, or the address has a typo.</p>
+<div class="terminal nf__term" role="img" aria-label="Terminal output: a traceroute that ends with HTTP 404">
+<div class="terminal__bar"><span class="tdot tdot--close"></span><span class="tdot tdot--min"></span><span class="tdot tdot--max"></span><span>patryk@portfolio — zsh</span></div>
+<div class="terminal__body"><div id="nf-log"></div></div>
+</div>
+<div class="contact__actions nf__actions">
+<a class="btn btn--primary" href="/index.html">Main page</a>
+</div>
+</div>
 </div>
 </main>
+<script src="/assets/js/404.js?v=1fe1e2ee" defer></script>
 </body>
 </html>
