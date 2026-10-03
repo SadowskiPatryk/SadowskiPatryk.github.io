@@ -1,0 +1,45 @@
+/* patryk-sadowski.pl — viewer.css : dark instrument overlay for the embedded CT-viewer widget */
+:root {
+  --accent: #00e5cc; --x: #03a9f4; --y: #ff9800; --z: #b44bd1;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: #000; color: #e6e6e6; }
+button { font: inherit; color: inherit; }
+
+.stage { position: relative; height: 100%; overflow: hidden; }
+#gl { display: block; width: 100%; height: 100%; cursor: grab; touch-action: pan-y; }
+#gl:active { cursor: grabbing; }
+#gl:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+#nogl { position: absolute; inset: 0; display: grid; place-content: center; margin: 0; padding: 2rem; text-align: center; color: #a0a0a0; }
+[hidden] { display: none !important; }
+
+/* switches */
+.hud-toggles { position: absolute; top: .7rem; left: .7rem; z-index: 3; display: flex; flex-wrap: wrap; gap: .4rem; }
+.hud-toggle { display: inline-flex; align-items: center; gap: .5rem; padding: .32rem .55rem .32rem .75rem; border: 0; border-radius: 999px; background: rgb(24 24 24 / .8); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); font-size: .72rem; font-weight: 600; color: #a8a8a8; cursor: pointer; transition: color .3s, background-color .2s; }
+.hud-toggle:hover { background: rgb(44 44 44 / .9); }
+.hud-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hud-toggle i { position: relative; width: 1.9rem; height: 1.05rem; border-radius: 999px; background: #4a4a4a; transition: background-color .3s; }
+.hud-toggle i::after { content: ""; position: absolute; top: .15rem; left: .15rem; width: .75rem; height: .75rem; border-radius: 50%; background: #fff; transition: transform .3s cubic-bezier(.3, 1.4, .5, 1); }
+.hud-toggle[aria-checked="true"] { color: #e8fffb; }
+.hud-toggle[aria-checked="true"] i { background: var(--accent); }
+.hud-toggle[aria-checked="true"] i::after { transform: translateX(.85rem); }
+
+/* clip-plane sliders: moved by a script until the visitor takes over */
+.hud-sliders { position: absolute; left: .7rem; right: .7rem; bottom: .7rem; z-index: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; padding: .5rem .8rem .55rem; border-radius: .8rem; background: rgb(24 24 24 / .8); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hud-row { --c: #888; --v: 0; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; gap: 0 .5rem; align-items: center; font-size: .72rem; cursor: pointer; }
+.hud-row.x { --c: var(--x); } .hud-row.y { --c: var(--y); } .hud-row.z { --c: var(--z); }
+.hud-row b { color: var(--c); font-weight: 700; }
+.hud-row em { grid-column: 1 / 3; font-style: normal; font-variant-numeric: tabular-nums; color: #8d8d8d; text-align: right; font-size: .68rem; transition: color .2s; }
+.hud-row.active em { color: #fff; }
+.hud-row input { -webkit-appearance: none; appearance: none; width: 100%; height: 1.4rem; margin: 0; background: transparent; cursor: pointer; touch-action: pan-y; }
+.hud-row input::-webkit-slider-runnable-track { height: .22rem; border-radius: 99px; background: linear-gradient(90deg, var(--c) calc(var(--v) * 1%), #4a4a4a calc(var(--v) * 1%)); }
+.hud-row input::-moz-range-track { height: .22rem; border-radius: 99px; background: linear-gradient(90deg, var(--c) calc(var(--v) * 1%), #4a4a4a calc(var(--v) * 1%)); }
+.hud-row input::-webkit-slider-thumb { -webkit-appearance: none; width: .85rem; height: .85rem; margin-top: -.315rem; border: 0; border-radius: 50%; background: var(--c); transition: box-shadow .25s, transform .25s; }
+.hud-row input::-moz-range-thumb { width: .85rem; height: .85rem; border: 0; border-radius: 50%; background: var(--c); transition: box-shadow .25s, transform .25s; }
+.hud-row.active input::-webkit-slider-thumb { box-shadow: 0 0 0 .3rem rgb(255 255 255 / .14), 0 0 .9rem var(--c); transform: scale(1.15); }
+.hud-row.active input::-moz-range-thumb { box-shadow: 0 0 0 .3rem rgb(255 255 255 / .14), 0 0 .9rem var(--c); transform: scale(1.15); }
+.hud-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+@media (max-width: 24rem) { .hud-sliders { gap: .6rem; padding-inline: .6rem; } }
+@media (max-width: 17rem) { .hud-sliders { grid-template-columns: 1fr; gap: .2rem; } }

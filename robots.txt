@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_build/
+
 Sitemap: https://patryk-sadowski.pl/sitemap.xml

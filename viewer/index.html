@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>CT Viewer – interactive demo widget</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="stylesheet" href="../assets/css/viewer.css">
+</head>
+<body>
+<!-- Widget embedded in the CT Viewer card of the portfolio (an <iframe>). Synthetic part, hand-written WebGL. -->
+<main class="stage">
+  <div class="hud">
+    <div class="hud-toggles">
+      <button type="button" class="hud-toggle" id="hud-cap" role="switch" aria-checked="true"><span>Capping</span><i></i></button>
+      <button type="button" class="hud-toggle" id="hud-auto" role="switch" aria-checked="true"><span>Auto-rotate</span><i></i></button>
+    </div>
+    <div class="hud-sliders" role="group" aria-label="Clip planes">
+      <label class="hud-row x"><b>X</b><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Clip X"><em>0%</em></label>
+      <label class="hud-row y"><b>Y</b><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Clip Y"><em>0%</em></label>
+      <label class="hud-row z"><b>Z</b><input type="range" min="0" max="100" step="0.1" value="0" aria-label="Clip Z"><em>0%</em></label>
+    </div>
+  </div>
+  <canvas id="gl" tabindex="0" aria-label="Interactive 3D mesh of a synthetic part. Drag to rotate; arrow keys also rotate."></canvas>
+  <p id="nogl" hidden>This demo needs WebGL, which is not available in your browser.</p>
+</main>
+<script src="../assets/js/viewer.js" defer></script>
+</body>
+</html>
