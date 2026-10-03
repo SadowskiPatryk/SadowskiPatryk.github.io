@@ -1,79 +1,73 @@
-# Patryk Sadowski - Portfolio & Resume Summary
+# Patryk Sadowski – Data Backend Engineer (Portfolio & Resume)
 
-> Computer Science student combining data analytics, software engineering, and process automation. Specialized in building scalable tools, AI implementations, and IoT solutions that optimize business and research workflows.
+> Computer Science student (B.Eng., Adam Mickiewicz University in Poznań, defense planned 02/2027) specialising in backend and data engineering: Python, FastAPI, SQL, Snowflake, Docker and 3D/WebGL. Co-author of CT Viewer, an award-winning platform for browser-based visualization of industrial CT scans, built with the National Centre for Nuclear Research (NCBJ). Looking for Data / Backend Engineering roles (Fullstack as a fallback), ideally on scientific and research-grade data platforms.
 
-## Profile Summary
+## Profile
 * **Full Name:** Patryk Sadowski
-* **Role:** Data Scientist, Software Engineer & IT Specialist
-* **Education:** Bachelor of Engineering in Computer Science at Adam Mickiewicz University in Poznań (UAM) (10/2023 - 02/2027)
-* **Location:** Poland
-* **Website:** https://patryk-sadowski.pl
+* **Role:** Data Backend Engineer (open to Data / Backend roles, Fullstack as a fallback; internships welcome)
+* **Location:** Poland (remote or hybrid)
+* **Languages:** Polish (native), English (full professional proficiency)
+* **Websites:** https://patryk-sadowski.pl (English) · https://patryk-sadowski.pl/pl/ (Polski)
 * **Email:** contact@patryk-sadowski.pl
 * **GitHub:** https://github.com/SadowskiPatryk
 * **LinkedIn:** https://www.linkedin.com/in/patryk-sadowski3
+* **CV (PDF):** https://patryk-sadowski.pl/Patryk_Sadowski_CV.pdf
 
 ---
 
-## Technical Skills & Core Competencies
-* **Data Engineering & Analytics:** Python, SQL, Snowflake, Power BI, SAP ERP, Data Processing
-* **Software Development:** FastAPI, .NET, Flutter, Dart, Git, Full-stack Web Development
-* **AI & Machine Learning:** Scikit-learn, Computer Vision, AI Implementation, Predictive Modeling
-* **Infrastructure, Hardware & Systems:** Docker, IoT, ESP32, Windows Server Administration, Cybersecurity, Self-hosting
+## Highlights
+* **Information Systems Engineering Award** (Young Masters Competition / Konkurs Młodych Mistrzów, Forum Teleinformatyki 2026, Asseco Poland patronage) for the CT Viewer project.
+* **Invited to present CT Viewer at the Ministry of Digital Affairs** (Ministerstwo Cyfryzacji).
+
+---
+
+## Technical Skills
+* **Backend & APIs:** Python, FastAPI, REST
+* **Data & Storage:** SQL, Snowflake, SQLite, MS SQL Server, MinIO (S3-compatible object storage)
+* **Data Engineering & BI:** SAP ERP, Power BI (DAX), Power Automate, reporting automation
+* **Scientific computing:** NumPy, Pandas, SciPy, scikit-image, HDF5
+* **Infrastructure & DevOps:** Docker, Linux (working knowledge), self-hosting, Windows Server
+* **Tooling & quality:** Git, GitHub Actions, pytest
+* **3D & Visualization:** Three.js, WebGL, OpenGL, volumetric rendering
+* **ML & IoT:** Scikit-learn, Computer Vision, ESP32, Home Assistant, Zigbee2MQTT
+* **Also worked a little with:** JavaScript, React, Next.js, Tailwind CSS, Flutter / Dart, WordPress, C#, C++
+
+---
+
+## Featured Project: CT Viewer
+* **What:** Browser-based 3D visualization of industrial computed tomography (CT) scans, powered by a scalable backend architecture.
+* **Context:** Engineering thesis, built by a team of four with the National Centre for Nuclear Research (NCBJ); supervisors: dr Tomasz Piłka (UAM), dr Konrad Klimaszewski (NCBJ).
+* **Stack:** Python (workers: h5py, NumPy, trimesh), MinIO (S3-compatible object storage), FastAPI (presigned URLs), Docker, Flutter Web client with Three.js and WebGL (mesh and volume rendering).
+* **Engineering highlights:** HDF5 ingest pipeline with downsampling, Multi-Otsu segmentation, Marching Cubes and mesh decimation (GLB / STL export); background workers; object storage with presigned URLs so the browser reads data directly; interactive client with three-plane 2D slices, 3D meshes (clipping, capping) and WebGL volume rendering for non-destructive testing (NDT).
+* **Recognition:** Information Systems Engineering Award (Young Masters Competition) at Forum Teleinformatyki 2026, Asseco Poland patronage; invitation to the Ministry of Digital Affairs.
 
 ---
 
 ## Professional Experience
 
-### Europe Inventory Operator (Intern) — Signify
-* **Period:** 01/2026 - Present
-* **Location:** Piła, Poland (Hybrid)
-* **Key Achievements & Responsibilities:**
-  * Automating reporting workflows and delivery tracking using Power BI and Snowflake.
-  * Identifying and resolving SAP ERP system errors and inventory discrepancies.
-  * Designing and developing internal AI-powered applications for automated goods recognition.
+
+### Europe Inventory Operator · Data Analyst — Signify
+* **Period:** 01/2026 – Present · Piła, Poland (Hybrid)
+* Automating reporting workflows with Snowflake, Power BI (DAX) and Power Automate.
+* Working with SAP ERP / WMS data: diagnosing system errors and inventory discrepancies, keeping data consistent across global logistics processes.
+* Designing Warehouse AI Vision, a FastAPI-based computer-vision service for real-time stock reconciliation on mobile devices.
 
 ### IT Support Specialist (Junior) — IT sp. z o.o.
-* **Period:** 08/2023 - Present
-* **Location:** Poznań, Poland (Remote)
-* **Key Achievements & Responsibilities:**
-  * Providing complex remote technical support for court bailiffs and legal offices.
-  * Administering and maintaining Windows Server environments.
-  * Diagnosing and resolving complex system, network, and hardware issues.
+* **Period:** 08/2023 – Present · Poznań, Poland (Remote)
+* Remote technical support and administration of Windows Server environments for bailiff offices and law firms; data backups and information security.
 
 ---
 
-## Featured Projects
-
-### 1. CT Scan Visualization (Engineering Thesis for NCBJ)
-* **Status:** Work in Progress
-* **Role/Context:** Engineering Thesis developed for the National Centre for Nuclear Research (NCBJ / Narodowe Centrum Badań Jądrowych).
-* **Tech Stack:** Python, Flutter, Dart, Full-stack, 3D Rendering, Radiographic Processing.
-* **Description:** Specialized software solution designed to process, render, and visualize 3D industrial CT scans. Features an interactive interface enabling precise 3D radiographic data analysis.
-
-### 2. Warehouse AI Vision (Signify Internal Project)
-* **Status:** Work in Progress
-* **Tech Stack:** Python, FastAPI, Computer Vision, Machine Learning.
-* **Description:** AI-powered mobile solution for automated goods recognition. Leverages computer vision via FastAPI to detect and resolve stock discrepancies in real-time.
-
-### 3. Forest Litter Moisture Predictive Model
-* **Status:** Completed (Academic / Research)
-* **Tech Stack:** ESP32, IoT, Python, Scikit-learn.
-* **Description:** End-to-end IoT ecosystem for environmental monitoring and fire risk assessment. Uses microcontrollers (ESP32) and Scikit-learn predictive modeling to forecast forest litter moisture with high precision.
-
-### 4. Interactive Trail Guide for Nature Reserve (Kuźnik Reserve)
-* **Status:** Completed (Academic Project)
-* **Tech Stack:** Python, FastAPI, Text-to-Speech (TTS), QR Code Integration, Self-hosting.
-* **URL:** https://rezerwat-kuznik.duckdns.org/
-* **Description:** Interactive web application designed as a guide for the Kuźnik Nature Reserve in Piła. Users scan QR codes at physical checkpoints along the trail to unlock localized educational content and listen to audio descriptions generated via integrated Text-to-Speech (TTS).
-
-### 5. Commercial Web Platforms & Infrastructure Management
-* **Status:** Completed / Ongoing Maintenance
-* **Tech Stack:** WordPress, Web Development, Server Administration, Self-hosting.
-* **Description:** End-to-end development, deployment, and ongoing administration of commercial B2B web platforms hosted on custom-built server infrastructure to optimize speed and reliability.
+## Other Projects
+* **Warehouse AI Vision** (Signify internal, in progress) — Python, FastAPI, Computer Vision, ML.
+* **Forest Litter Moisture Model** (research, completed) — ESP32, IoT, Python, Scikit-learn.
+* **Kuźnik Reserve Trail Guide** (academic, live: https://rezerwat-kuznik.duckdns.org/) — Python, FastAPI, text-to-speech, QR codes, self-hosting.
+* **Self-hosted client websites** (commercial, maintained) — WordPress, server administration, self-hosting.
 
 ---
 
-## Education History
-
-* **Adam Mickiewicz University in Poznań (UAM)** — Bachelor of Engineering in Computer Science (10/2023 - 02/2027)
-* **Technical High School No. 2 in Wągrowiec** — IT Technician (09/2019 - 05/2023)
+## Education & Community
+* **Adam Mickiewicz University in Poznań (UAM)** — B.Eng. Computer Science (10/2023 – 02/2027)
+* **Technical High School No. 2 in Wągrowiec** — IT Technician (09/2019 – 05/2023)
+* **Student Council, Nadnotecki Institute of UAM in Piła** — Vice President (2025/26), Member (2024/25)
+* **Cybersecurity Awareness Trainer**, Faculty of Mathematics and Computer Science, UAM (01/2026)

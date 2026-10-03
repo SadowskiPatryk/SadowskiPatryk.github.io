@@ -1,781 +1,474 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <title>Patryk Sadowski | Data Science & Software Engineering</title>
-    <meta name="description" content="Portfolio of Patryk Sadowski - Computer Science student combining data analytics with software engineering and process automation.">
-    <meta name="author" content="Patryk Sadowski">
-    <meta name="keywords" content="Patryk Sadowski, Data Science, Software Engineering, Process Automation, Python, IT Support, UAM, Portfolio">
-    <link rel="canonical" href="https://patryk-sadowski.pl/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://patryk-sadowski.pl/">
-    <meta property="og:title" content="Patryk Sadowski | Data Science & Software Engineering">
-    <meta property="og:description" content="Computer Science student combining data analytics with software engineering. Check out my projects and experience.">
-    <meta property="og:image" content="https://patryk-sadowski.pl/og-image.jpg">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://patryk-sadowski.pl/">
-    <meta name="twitter:title" content="Patryk Sadowski | Data Science & Software Engineering">
-    <meta name="twitter:description" content="Computer Science student combining data analytics with software engineering. Check out my projects and experience.">
-    <meta name="twitter:image" content="https://patryk-sadowski.pl/og-image.jpg">
-
-    <meta name="google-site-verification" content="5T8QX271_nsJnuXS1gLs4J1vfpRcXBVwdDQiWvmuy5Y" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Patryk Sadowski",
-      "url": "https://patryk-sadowski.pl/",
-      "jobTitle": "Data Scientist & Software Engineer",
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Adam Mickiewicz University in Poznań"
-        }
-      ],
-      "worksFor": [
-        {
-          "@type": "Organization",
-          "name": "Signify"
-        },
-        {
-          "@type": "Organization",
-          "name": "IT sp. z o.o."
-        }
-      ],
-      "sameAs": [
-        "https://github.com/SadowskiPatryk",
-        "https://www.linkedin.com/in/patryk-sadowski3"
-      ]
-    }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3b82f6',
-                        dark: '#0f172a',
-                        card: {
-                            light: '#ffffff',
-                            dark: '#1e293b'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html[lang="en"] .lang-pl { display: none !important; }
-        html[lang="pl"] .lang-en { display: none !important; }
-        body * {
-            transition-property: background-color, border-color, color, fill, stroke;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 400ms;
-        }
-
-        input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
-
-        @keyframes shake-glow {
-            0%, 100% { transform: translateX(0) scale(1); box-shadow: none; border-color: inherit; }
-            20%, 60% { transform: translateX(-6px) scale(1); box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); border-color: #ef4444; }
-            40%, 80% { transform: translateX(6px) scale(1); box-shadow: 0 0 20px rgba(239, 68, 68, 0.6); border-color: #ef4444; }
-        }
-        .animate-shake-glow {
-            animation: shake-glow 0.4s ease-in-out;
-        }
-    </style>
-    
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-vzNChpN7fgs6Nb9nrFRE8UrZHQVcx/RDY3y6teQbNJo='; style-src 'self'; img-src 'self'; frame-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Patryk Sadowski – Data Backend Engineer (Python, FastAPI)</title>
+<meta name="description" content="Data Backend Engineer: Python, FastAPI, SQL, Snowflake, Docker. Award-winning CT Viewer built with NCBJ. B.Eng. Computer Science, UAM Poznań.">
+<meta name="author" content="Patryk Sadowski">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0f172a">
+<link rel="canonical" href="https://patryk-sadowski.pl/">
+<link rel="alternate" hreflang="en" href="https://patryk-sadowski.pl/">
+<link rel="alternate" hreflang="pl" href="https://patryk-sadowski.pl/pl/">
+<link rel="alternate" hreflang="x-default" href="https://patryk-sadowski.pl/">
+<link rel="icon" href="./favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Patryk Sadowski">
+<meta property="og:url" content="https://patryk-sadowski.pl/">
+<meta property="og:title" content="Patryk Sadowski – Data Backend Engineer (Python, FastAPI)">
+<meta property="og:description" content="Data Backend Engineer: Python, FastAPI, SQL, Snowflake, Docker. Award-winning CT Viewer built with NCBJ. B.Eng. Computer Science, UAM Poznań.">
+<meta property="og:image" content="https://patryk-sadowski.pl/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Patryk Sadowski – Data Backend Engineer. Python, FastAPI, data platforms.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patryk Sadowski – Data Backend Engineer (Python, FastAPI)">
+<meta name="twitter:description" content="Data Backend Engineer: Python, FastAPI, SQL, Snowflake, Docker. Award-winning CT Viewer built with NCBJ. B.Eng. Computer Science, UAM Poznań.">
+<meta name="twitter:image" content="https://patryk-sadowski.pl/og-image.jpg">
+<meta name="twitter:image:alt" content="Patryk Sadowski – Data Backend Engineer. Python, FastAPI, data platforms.">
+<meta name="google-site-verification" content="5T8QX271_nsJnuXS1gLs4J1vfpRcXBVwdDQiWvmuy5Y">
+<link rel="stylesheet" href="./assets/css/site.css?v=fcd06376">
+<script>(function () { var d = document.documentElement; d.classList.add('js'); var t = 'dark'; try { t = localStorage.getItem('portfolio-theme') === 'light' ? 'light' : 'dark'; } catch (e) {} d.setAttribute('data-theme', t); var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute('content', t === 'light' ? '#f8fafc' : '#0f172a'); })();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://patryk-sadowski.pl/#website","url":"https://patryk-sadowski.pl/","name":"Patryk Sadowski","inLanguage":["en","pl"],"publisher":{"@id":"https://patryk-sadowski.pl/#person"}},{"@type":"ProfilePage","@id":"https://patryk-sadowski.pl/#webpage","url":"https://patryk-sadowski.pl/","name":"Patryk Sadowski – Data Backend Engineer (Python, FastAPI)","description":"Data Backend Engineer: Python, FastAPI, SQL, Snowflake, Docker. Award-winning CT Viewer built with NCBJ. B.Eng. Computer Science, UAM Poznań.","inLanguage":"en","dateModified":"2026-10-03","isPartOf":{"@id":"https://patryk-sadowski.pl/#website"},"about":{"@id":"https://patryk-sadowski.pl/#person"},"mainEntity":{"@id":"https://patryk-sadowski.pl/#person"}},{"@type":"Person","@id":"https://patryk-sadowski.pl/#person","name":"Patryk Sadowski","url":"https://patryk-sadowski.pl/","jobTitle":"Data Backend Engineer","description":"Computer Science student (B.Eng., UAM Poznań) specialising in backend and data engineering: Python, FastAPI, SQL, Snowflake, Docker and 3D/WebGL. Co-author of CT Viewer, an award-winning platform for browser-based visualization of industrial CT scans built with the National Centre for Nuclear Research (NCBJ).","address":{"@type":"PostalAddress","addressLocality":"Poznań","addressCountry":"PL"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Adam Mickiewicz University in Poznań","sameAs":"https://amu.edu.pl/"},"worksFor":[{"@type":"Organization","name":"Signify","url":"https://www.signify.com/"},{"@type":"Organization","name":"IT sp. z o.o."}],"knowsAbout":["Backend development","Data engineering","Python","FastAPI","SQL","Snowflake","Docker","SAP ERP","Power BI","Three.js","WebGL","Industrial computed tomography","IoT"],"award":"Information Systems Engineering Award – Young Masters Competition, Forum Teleinformatyki 2026 (Asseco Poland patronage)","sameAs":["https://github.com/SadowskiPatryk","https://www.linkedin.com/in/patryk-sadowski3"]},{"@type":"CreativeWork","@id":"https://patryk-sadowski.pl/#ct-viewer","name":"CT Viewer","description":"Browser-based 3D visualization of industrial computed tomography scans: Python workers, MinIO object storage, FastAPI presigned URLs and a Flutter Web client with Three.js/WebGL. Built with the National Centre for Nuclear Research (NCBJ).","creator":{"@id":"https://patryk-sadowski.pl/#person"},"award":"Information Systems Engineering Award – Young Masters Competition, Forum Teleinformatyki 2026 (Asseco Poland patronage)","inLanguage":"en","keywords":"CT, computed tomography, volumetric rendering, WebGL, Three.js, Flutter, FastAPI, MinIO, Docker, NCBJ"}]}</script>
 </head>
-<body class="bg-slate-50 dark:bg-dark text-slate-800 dark:text-slate-300 font-sans antialiased selection:bg-primary selection:text-white">
-
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-dark/80 border-b border-slate-200 dark:border-slate-800">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center gap-4">
-            <div class="flex gap-4 sm:gap-6 font-medium text-sm sm:text-base">
-                <a href="#" id="nav-about" class="hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">
-                    <span class="lang-en">About me</span>
-                    <span class="lang-pl">O mnie</span>
-                </a>
-                <a href="#experience" class="hover:text-primary dark:hover:text-primary transition-colors">
-                    <span class="lang-en">Experience</span>
-                    <span class="lang-pl">Doświadczenie</span>
-                </a>
-                <a href="#projects" class="hover:text-primary dark:hover:text-primary transition-colors">
-                    <span class="lang-en">Projects</span>
-                    <span class="lang-pl">Projekty</span>
-                </a>
-                <a href="#education" class="hover:text-primary dark:hover:text-primary transition-colors">
-                    <span class="lang-en">Education</span>
-                    <span class="lang-pl">Edukacja</span>
-                </a>
-                <a href="#contact" class="hover:text-primary dark:hover:text-primary transition-colors">
-                    <span class="lang-en">Contact</span>
-                    <span class="lang-pl">Kontakt</span>
-                </a>
-            </div>
-
-            <div class="flex items-center gap-3 bg-slate-100 dark:bg-card-dark rounded-lg border border-slate-200 dark:border-slate-700 p-1 shadow-sm">
-                <button id="theme-toggle" class="p-1.5 rounded transition-transform duration-500 hover:rotate-12 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary" title="Toggle Theme">
-                    <svg id="icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    </svg>
-                    <svg id="icon-moon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                    </svg>
-                </button>
-                <div class="w-px h-5 bg-slate-300 dark:bg-slate-600"></div>
-                <button onclick="setLang('en')" id="btn-en" class="px-2 py-1 rounded text-sm font-medium">EN</button>
-                <button onclick="setLang('pl')" id="btn-pl" class="px-2 py-1 rounded text-sm font-medium">PL</button>
-            </div>
-        </div>
-    </nav>
-
-    <main id="main-content" class="max-w-4xl mx-auto px-6 py-12 md:py-20 transition-opacity duration-300 ease-in-out opacity-100">
-
-        <header class="mb-20" id="top">
-            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white tracking-tight mb-4">
-                Patryk Sadowski
-            </h1>
-            <h2 class="text-xl md:text-2xl text-primary font-medium mb-6">
-                <span class="lang-en">Data Science | Software Engineering | Process Automation</span>
-                <span class="lang-pl">Data Science | Inżynieria oprogramowania | Automatyzacja procesów</span>
-            </h2>
-            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mb-8">
-                <span class="lang-en">I combine data analytics with software engineering. I build scalable tools that optimize business and research processes, reduce manual overhead, and introduce automation in complex corporate workflows.</span>
-                <span class="lang-pl">Łączę analitykę danych z inżynierią oprogramowania. Tworzę skalowalne narzędzia optymalizujące procesy biznesowe i badawcze, redukujące nakład pracy manualnej oraz wprowadzające automatyzację w złożonych środowiskach korporacyjnych.</span>
-            </p>
-            <div class="flex flex-wrap items-center gap-4">
-                <a href="#projects" class="bg-primary hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg shadow-sm transition-colors">
-                    <span class="lang-en">View projects</span>
-                    <span class="lang-pl">Zobacz projekty</span>
-                </a>
-                <a href="Patryk_Sadowski_CV.pdf" target="_blank" class="bg-white dark:bg-card-dark border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-900 dark:text-white font-medium py-2 px-6 rounded-lg shadow-sm transition-colors flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    <span class="lang-en">Download CV</span>
-                    <span class="lang-pl">Pobierz CV</span>
-                </a>
-                
-                <div class="flex items-center gap-4 ml-2 mt-4 sm:mt-0">
-                    <a href="https://github.com/SadowskiPatryk" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors" aria-label="GitHub">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
-                        </svg>
-                    </a>
-                    
-                    <a href="#contact" id="icon-contact" class="text-slate-500 hover:text-red-500 dark:text-slate-400 dark:hover:text-red-400 transition-colors" aria-label="Email">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
-                        </svg>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/patryk-sadowski3" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors" aria-label="LinkedIn">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 scroll-mt-24">
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-200 dark:border-slate-700 pb-2">
-                    <span class="lang-en">About me</span>
-                    <span class="lang-pl">O mnie</span>
-                </h3>
-                <p class="mb-4 text-slate-700 dark:text-slate-300">
-                    <span class="lang-en">As a Computer Science student at Adam Mickiewicz University, I combine a strong academic foundation with commercial experience in data engineering and process automation. In my work, I focus on practical solutions to operational problems.</span>
-                    <span class="lang-pl">Jako student informatyki na Uniwersytecie im. Adama Mickiewicza, łączę silne fundamenty akademickie z komercyjnym doświadczeniem w inżynierii danych i automatyzacji. W swoich pracach stawiam na praktyczne rozwiązywanie problemów operacyjnych.</span>
-                </p>
-                <p class="text-slate-700 dark:text-slate-300">
-                    <span class="lang-en">In my free time, I am passionate about Smart Home systems, as well as 3D design and printing.</span>
-                    <span class="lang-pl">W wolnym czasie pasjonuję się systemami Smart Home oraz projektowaniem i drukiem 3D.</span>
-                </p>
-            </div>
-            
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 border-b border-slate-200 dark:border-slate-700 pb-2">
-                    <span class="lang-en">Tech Stack</span>
-                    <span class="lang-pl">Technologie</span>
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-medium mb-1">Data Engineering & Analytics</h4>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Python, SQL, Snowflake, Power BI, SAP ERP</p>
-                    </div>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-medium mb-1">Software Development</h4>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">FastAPI, .NET, Git</p>
-                    </div>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-medium mb-1">AI & Machine Learning</h4>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Scikit-learn, AI Implementation, Computer Vision</p>
-                    </div>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-medium mb-1">Infrastructure & Hardware</h4>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Docker, IoT, Cybersecurity, ESP32</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="mb-20 scroll-mt-24">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
-                <span class="lang-en">Experience</span>
-                <span class="lang-pl">Doświadczenie</span>
-            </h3>
-            
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">Europe Inventory Operator (Intern)</h4>
-                            <p class="text-primary font-medium">Signify</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">01/2026 - Present</span>
-                            <span class="block text-sm text-slate-500">Piła, <span class="lang-en">Poland (Hybrid)</span><span class="lang-pl">Polska (Praca hybrydowa)</span></span>
-                        </div>
-                    </div>
-                    <ul class="list-disc list-inside space-y-1 text-slate-700 dark:text-slate-400">
-                        <li class="lang-en">Automating reporting workflows to streamline delivery tracking using Power BI and Snowflake.</li>
-                        <li class="lang-pl">Automatyzacja procesów raportowania w celu optymalizacji śledzenia dostaw (Power BI, Snowflake).</li>
-                        
-                        <li class="lang-en">Identifying and resolving inventory discrepancies and SAP system errors.</li>
-                        <li class="lang-pl">Identyfikacja i rozwiązywanie rozbieżności w inwentaryzacji oraz błędów w systemie SAP.</li>
-                        
-                        <li class="lang-en">Designing an AI-powered application for automated goods recognition.</li>
-                        <li class="lang-pl">Projektowanie aplikacji zintegrowanej z AI do zautomatyzowanego rozpoznawania towarów.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">IT Support Specialist (Junior)</h4>
-                            <p class="text-primary font-medium">IT sp. z o.o.</p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">08/2023 - Present</span>
-                            <span class="block text-sm text-slate-500">Poznań, <span class="lang-en">Poland (Remote)</span><span class="lang-pl">Polska (Praca zdalna)</span></span>
-                        </div>
-                    </div>
-                    <ul class="list-disc list-inside space-y-1 text-slate-700 dark:text-slate-400">
-                        <li class="lang-en">Providing remote technical support for court bailiffs and legal offices.</li>
-                        <li class="lang-pl">Zdalne wsparcie techniczne dla komorników i kancelarii prawnych.</li>
-                        
-                        <li class="lang-en">Managing Windows Server environments.</li>
-                        <li class="lang-pl">Administracja środowiskami Windows Server.</li>
-                        
-                        <li class="lang-en">Diagnosing and resolving complex system and hardware issues.</li>
-                        <li class="lang-pl">Diagnozowanie i rozwiązywanie złożonych problemów systemowych i sprzętowych.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="mb-20 scroll-mt-24">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
-                <span class="lang-en">Projects</span>
-                <span class="lang-pl">Projekty</span>
-            </h3>
-            
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">CT Scan Visualization for NCBJ</span>
-                                <span class="lang-pl">Wizualizacja Skanów CT dla NCBJ</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Engineering Thesis</span>
-                                <span class="lang-pl">Projekt Inżynierski</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                <span class="lang-en">Work in Progress</span>
-                                <span class="lang-pl">W trakcie</span>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-slate-700 dark:text-slate-400 mb-4">
-                        <span class="lang-en">Specialized software solution developed for the Polish National Centre for Nuclear Research to process and visualize 3D industrial CT scans. Implementing an interactive interface to enable precise analysis of 3D radiographic data.</span>
-                        <span class="lang-pl">Specjalistyczne oprogramowanie stworzone dla Narodowego Centrum Badań Jądrowych, służące do przetwarzania i wizualizacji skanów tomografii komputerowej. Implementacja interaktywnego interfejsu umożliwiającego precyzyjną analizę trójwymiarowych danych radiograficznych.</span>
-                    </p>
-                    <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-600 dark:text-slate-400">
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Python</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Flutter</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Dart</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Full-stack</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">3D Rendering</span>
-                    </div>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">Warehouse AI Vision</h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Signify Internal Project</span>
-                                <span class="lang-pl">Projekt Wewnętrzny Signify</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                <span class="lang-en">Work in Progress</span>
-                                <span class="lang-pl">W trakcie</span>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-slate-700 dark:text-slate-400 mb-4">
-                        <span class="lang-en">AI-powered application for automated goods recognition. Implementing computer vision via FastAPI to detect and resolve stock discrepancies in real-time, using mobile devices.</span>
-                        <span class="lang-pl">Aplikacja wykorzystująca sztuczną inteligencję do automatycznego rozpoznawania towarów. Implementacja logiki computer vision poprzez FastAPI w celu wykrywania i rozwiązywania rozbieżności magazynowych w czasie rzeczywistym na urządzeniach mobilnych.</span>
-                    </p>
-                    <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-600 dark:text-slate-400">
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Python</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">FastAPI</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Computer Vision</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Machine Learning</span>
-                    </div>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">Forest Litter Moisture Predictive Model</span>
-                                <span class="lang-pl">Model Predykcyjny Wilgotności Ściółki Leśnej</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Research Project</span>
-                                <span class="lang-pl">Projekt Badawczy</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                <span class="lang-en">Completed</span>
-                                <span class="lang-pl">Gotowe</span>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-slate-700 dark:text-slate-400 mb-4">
-                        <span class="lang-en">Built an IoT ecosystem for environmental monitoring and fire risk assessment using Python and ESP32. Engineered a predictive model with Scikit-learn to forecast moisture levels with high accuracy.</span>
-                        <span class="lang-pl">Budowa ekosystemu IoT do monitorowania środowiska i oceny ryzyka pożarowego przy użyciu środowiska Python i mikrokontrolerów ESP32. Stworzenie predykcyjnego modelu statystycznego w bibliotece Scikit-learn, prognozującego poziom wilgotności z dużą dokładnością.</span>
-                    </p>
-                    <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-600 dark:text-slate-400">
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">ESP32</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">IoT</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Python</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Scikit-learn</span>
-                    </div>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">Interactive Trail Guide for Nature Reserve</span>
-                                <span class="lang-pl">Interaktywny Przewodnik po Rezerwacie Kuźnik</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Academic Project</span>
-                                <span class="lang-pl">Projekt Akademicki</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                <span class="lang-en">Completed</span>
-                                <span class="lang-pl">Gotowe</span>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-slate-700 dark:text-slate-400 mb-4">
-                        <span class="lang-en">Interactive web application designed as a guide for the Kuźnik Nature Reserve located in Piła. Users scan QR codes at physical checkpoints along the trail to unlock localized educational content and listen to audio descriptions generated via integrated Text-to-Speech (TTS). Hosted live (demo) at <a href="https://rezerwat-kuznik.duckdns.org/" target="_blank"><strong>rezerwat-kuznik.duckdns.org</strong></a>.</span>
-                        <span class="lang-pl">Interaktywna aplikacja internetowa pełniąca rolę przewodnika po Rezerwacie Przyrody Kuźnik w Pile. Użytkownik skanuje kody QR na słupkach edukacyjnych na ścieżce, co otwiera dedykowaną podstronę przystanku z wygenerowanym nagraniem lektora (Text-to-Speech). Demo dostępne pod adresem <a href="https://rezerwat-kuznik.duckdns.org/" target="_blank"><strong>rezerwat-kuznik.duckdns.org</strong></a>.</span>
-                    </p>
-                    <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-600 dark:text-slate-400">
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Python</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">FastAPI</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">TTS (Text-to-Speech)</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">QR Code Integration</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Self-hosting</span>
-                    </div>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">Commercial WordPress Websites</span>
-                                <span class="lang-pl">Komercyjne Strony WordPress</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Commercial Projects</span>
-                                <span class="lang-pl">Projekty Komercyjne</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                <span class="lang-en">Completed</span>
-                                <span class="lang-pl">Gotowe</span>
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-slate-700 dark:text-slate-400 mb-4">
-                        <span class="lang-en">End-to-end development, deployment, and ongoing management of websites for B2B clients (incl. <a href="https://fhmajka.pl" target="_blank"><strong>fhmajka.pl</strong></a> and <a href="https://wypozyczalnia-golden.com" target="_blank"><strong>wypozyczalnia-golden.com</strong></a>). The platforms are built on WordPress, self-hosted, and administered on custom-built server infrastructure to optimize performance and operations.</span>
-                        <span class="lang-pl">Kompleksowe tworzenie, wdrażanie oraz stałe zarządzanie stronami internetowymi dla klientów biznesowych (m.in. <a href="https://fhmajka.pl" target="_blank"><strong>fhmajka.pl</strong></a> oraz <a href="https://wypozyczalnia-golden.com" target="_blank"><strong>wypozyczalnia-golden.com</strong></a>). Platformy oparto na systemie WordPress, a hostowane i administrowane są na własnej, dedykowanej infrastrukturze serwerowej w celu optymalizacji wydajności i kosztów.</span>
-                    </p>
-                    <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-600 dark:text-slate-400">
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">WordPress</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Web Development</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Server Administration</span>
-                        <span class="bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded border border-slate-200 dark:border-slate-700">Self-hosting</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="education" class="mb-20 scroll-mt-24">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
-                <span class="lang-en">Education</span>
-                <span class="lang-pl">Wykształcenie</span>
-            </h3>
-            
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">Adam Mickiewicz University in Poznań</span>
-                                <span class="lang-pl">Uniwersytet im. Adama Mickiewicza w Poznaniu</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">Bachelor of Engineering in Computer Science</span>
-                                <span class="lang-pl">Inżynier informatyki</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">10/2023 - 02/2027</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white dark:bg-card-dark p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 dark:text-white">
-                                <span class="lang-en">Technical High School No. 2 in Wągrowiec</span>
-                                <span class="lang-pl">Zespół Szkół nr 2 w Wągrowcu</span>
-                            </h4>
-                            <p class="text-primary font-medium">
-                                <span class="lang-en">IT Technician</span>
-                                <span class="lang-pl">Technik informatyk</span>
-                            </p>
-                        </div>
-                        <div class="text-left md:text-right mt-2 md:mt-0">
-                            <span class="block text-sm font-medium text-slate-700 dark:text-slate-300">09/2019 - 05/2023</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="mb-12 scroll-mt-24">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
-                <span class="lang-en">Contact</span>
-                <span class="lang-pl">Kontakt</span>
-            </h3>
-            
-            <div class="bg-white dark:bg-card-dark p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col items-center text-center">
-                <p class="text-slate-600 dark:text-slate-400 mb-6 max-w-lg">
-                    <span class="lang-en">Interested in collaboration or have a question? Click the button below to verify you are not a robot and reveal my email address.</span>
-                    <span class="lang-pl">Jesteś zainteresowany współpracą lub masz pytanie? Kliknij przycisk poniżej, aby zweryfikować, że nie jesteś robotem i odkryć mój email.</span>
-                </p>
-                
-                <button id="btn-contact-bottom" class="bg-primary hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg shadow-sm transition-transform hover:scale-105 flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    <span class="lang-en">Show Email</span>
-                    <span class="lang-pl">Pokaż Email</span>
-                </button>
-            </div>
-        </section>
-
-        <footer class="text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800 pt-8 mt-4">
-            <p>&copy; <span id="current-year"></span> Patryk Sadowski</p>
-        </footer>
-
-    </main>
-
-    <div id="contact-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-slate-900/50 backdrop-blur-sm opacity-0 transition-opacity duration-300">
-        <div id="contact-modal-content" class="bg-white dark:bg-card-dark p-6 md:p-8 rounded-xl shadow-xl w-full max-w-md mx-4 transform scale-95 opacity-0 transition-all duration-300 relative border border-slate-200 dark:border-slate-700 text-center">
-            <button id="close-modal" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                <span class="lang-en">Security Check</span>
-                <span class="lang-pl">Weryfikacja</span>
-            </h3>
-            
-            <div id="captcha-section">
-                <p class="text-slate-600 dark:text-slate-400 mb-6">
-                    <span class="lang-en">Please solve this simple math problem to prove you are human:</span>
-                    <span class="lang-pl">Rozwiąż proste zadanie matematyczne, aby udowodnić, że jesteś człowiekiem:</span>
-                </p>
-                
-                <div class="flex items-center justify-center gap-4 mb-6">
-                    <div id="captcha-question" class="text-xl font-mono font-bold bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-                    </div>
-                    <input type="number" id="captcha-input" class="w-20 px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primary font-mono text-lg text-center" placeholder="?">
-                </div>
-                
-                <p id="captcha-error" class="text-red-500 text-sm hidden mb-4">
-                    <span class="lang-en">Incorrect answer. Please try again.</span>
-                    <span class="lang-pl">Niepoprawna odpowiedź. Spróbuj ponownie.</span>
-                </p>
-                
-                <button id="verify-captcha" class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
-                    <span class="lang-en">Show Email</span>
-                    <span class="lang-pl">Pokaż email</span>
-                </button>
-            </div>
-
-            <div id="email-section" class="hidden text-center py-4">
-                <div class="mb-4 text-green-500 flex justify-center">
-                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                </div>
-                <p class="text-slate-600 dark:text-slate-400 mb-3">
-                    <span class="lang-en">Verification successful!</span>
-                    <span class="lang-pl">Weryfikacja zakończona sukcesem! Oto mój email:</span>
-                </p>
-                <a href="#" id="revealed-email" class="text-xl font-bold text-primary hover:underline break-all">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const navAbout = document.getElementById('nav-about');
-        navAbout.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (window.scrollY < 100) {
-                document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-            } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        });
-
-        const btnPl = document.getElementById('btn-pl');
-        const btnEn = document.getElementById('btn-en');
-        const mainContent = document.getElementById('main-content');
-        const activeLangClass = 'bg-primary text-white border-transparent';
-        const inactiveLangClass = 'text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border-transparent';
-
-        function setLang(lang, init = false) {
-            const applyLang = () => {
-                document.documentElement.lang = lang;
-                localStorage.setItem('portfolio-lang', lang);
-                
-                if(lang === 'en') {
-                    btnEn.className = `px-2 py-1 rounded text-sm font-medium border transition-colors ${activeLangClass}`;
-                    btnPl.className = `px-2 py-1 rounded text-sm font-medium border transition-colors ${inactiveLangClass}`;
-                } else {
-                    btnPl.className = `px-2 py-1 rounded text-sm font-medium border transition-colors ${activeLangClass}`;
-                    btnEn.className = `px-2 py-1 rounded text-sm font-medium border transition-colors ${inactiveLangClass}`;
-                }
-            };
-
-            if (init) {
-                applyLang();
-            } else {
-                mainContent.classList.remove('opacity-100');
-                mainContent.classList.add('opacity-0');
-                
-                setTimeout(() => {
-                    applyLang();
-                    mainContent.classList.remove('opacity-0');
-                    mainContent.classList.add('opacity-100');
-                }, 300);
-            }
-        }
-
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const iconSun = document.getElementById('icon-sun');
-        const iconMoon = document.getElementById('icon-moon');
-
-        function updateThemeUI(isDark) {
-            if (isDark) {
-                document.documentElement.classList.add('dark');
-                iconSun.classList.remove('hidden');
-                iconMoon.classList.add('hidden');
-            } else {
-                document.documentElement.classList.remove('dark');
-                iconSun.classList.add('hidden');
-                iconMoon.classList.remove('hidden');
-            }
-        }
-
-        function toggleTheme() {
-            const isDark = !document.documentElement.classList.contains('dark');
-            localStorage.setItem('portfolio-theme', isDark ? 'dark' : 'light');
-            updateThemeUI(isDark);
-        }
-
-        themeToggleBtn.addEventListener('click', toggleTheme);
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-
-            const savedLang = localStorage.getItem('portfolio-lang') || 'en';
-            setLang(savedLang, true);
-
-            const savedTheme = localStorage.getItem('portfolio-theme');
-            if (savedTheme) {
-                updateThemeUI(savedTheme === 'dark');
-            } else {
-                updateThemeUI(true);
-            }
-        });
-
-        const btnContactBottom = document.getElementById('btn-contact-bottom');
-        
-        const contactModal = document.getElementById('contact-modal');
-        const contactModalContent = document.getElementById('contact-modal-content');
-        const closeModalBtn = document.getElementById('close-modal');
-        
-        const captchaSection = document.getElementById('captcha-section');
-        const emailSection = document.getElementById('email-section');
-        const captchaQuestion = document.getElementById('captcha-question');
-        const captchaInput = document.getElementById('captcha-input');
-        const captchaError = document.getElementById('captcha-error');
-        const verifyBtn = document.getElementById('verify-captcha');
-        const revealedEmail = document.getElementById('revealed-email');
-        
-        let expectedAnswer = 0;
-
-        function generateCaptcha() {
-            const isAddition = Math.random() > 0.5;
-            let num1, num2;
-            
-            if (isAddition) {
-                num1 = Math.floor(Math.random() * 15) + 1;
-                num2 = Math.floor(Math.random() * 10) + 1;
-                expectedAnswer = num1 + num2;
-                captchaQuestion.textContent = `${num1} + ${num2} =`;
-            } else {
-                num1 = Math.floor(Math.random() * 10) + 1;
-                num2 = Math.floor(Math.random() * 5) + 2;
-                expectedAnswer = num1 * num2;
-                captchaQuestion.textContent = `${num1} * ${num2} =`;
-            }
-            
-            captchaInput.value = '';
-            captchaError.classList.add('hidden');
-            
-            captchaSection.classList.remove('hidden');
-            emailSection.classList.add('hidden');
-        }
-
-        function openModal(e) {
-            if(e) e.preventDefault();
-            generateCaptcha();
-            
-            contactModal.classList.remove('hidden');
-            contactModal.classList.add('flex');
-            
-            setTimeout(() => {
-                contactModal.classList.remove('opacity-0');
-                contactModalContent.classList.remove('scale-95', 'opacity-0');
-                contactModalContent.classList.add('scale-100', 'opacity-100');
-            }, 10);
-            
-            setTimeout(() => {
-                captchaInput.focus();
-            }, 300);
-        }
-
-        function closeModal() {
-            contactModal.classList.add('opacity-0');
-            contactModalContent.classList.remove('scale-100', 'opacity-100');
-            contactModalContent.classList.add('scale-95', 'opacity-0');
-            
-            setTimeout(() => {
-                contactModal.classList.remove('flex');
-                contactModal.classList.add('hidden');
-            }, 300);
-        }
-
-        if(btnContactBottom) btnContactBottom.addEventListener('click', openModal);
-        
-        closeModalBtn.addEventListener('click', closeModal);
-        contactModal.addEventListener('click', (e) => {
-            if (e.target === contactModal) closeModal();
-        });
-
-        function verifyCaptcha() {
-            const userAnswer = parseInt(captchaInput.value, 10);
-            if (userAnswer === expectedAnswer) {
-                const part1 = "contact";
-                const part2 = "patryk-sadowski.pl";
-                const myEmail = `${part1}@${part2}`;
-                
-                revealedEmail.textContent = myEmail;
-                revealedEmail.href = `mailto:${myEmail}`;
-                
-                captchaSection.classList.add('hidden');
-                emailSection.classList.remove('hidden');
-
-                if (typeof confetti === 'function') {
-                    confetti({
-                        particleCount: 100,
-                        spread: 70,
-                        origin: { y: 0.6 },
-                        colors: ['#22c55e', '#16a34a', '#15803d', '#86efac']
-                    });
-                }
-            } else {
-                captchaError.classList.remove('hidden');
-                
-                contactModalContent.classList.remove('animate-shake-glow');
-                void contactModalContent.offsetWidth;
-                contactModalContent.classList.add('animate-shake-glow');
-
-                generateCaptcha();
-                captchaInput.focus();
-            }
-        }
-
-        verifyBtn.addEventListener('click', verifyCaptcha);
-        
-        captchaInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                verifyCaptcha();
-            }
-        });
-
-    </script>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4Z"/></symbol>
+<symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+<symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+<symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></symbol>
+<symbol id="i-cube" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+<symbol id="i-blocks" viewBox="0 0 24 24"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+<symbol id="i-fish" viewBox="0 0 24 24"><path d="M7 12c1.8-3.6 5.2-5.5 9-4.3 1.9.6 3.9 2.4 5 4.3-1.1 1.9-3.1 3.7-5 4.3-3.8 1.2-7.2-.7-9-4.3Z"/><path d="M7 12 2.5 8v8z"/><path d="M17.5 11.2h.01"/></symbol>
+<symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+<symbol id="i-drone" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2.6"/><circle cx="19" cy="5" r="2.6"/><circle cx="5" cy="19" r="2.6"/><circle cx="19" cy="19" r="2.6"/><path d="m7 7 3 3"/><path d="m17 7-3 3"/><path d="m7 17 3-3"/><path d="m17 17-3-3"/><rect x="9.5" y="9.5" width="5" height="5" rx="1.2"/></symbol>
+<symbol id="i-github" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="#top" aria-label="Patryk Sadowski — back to top">
+<img class="brand__mark" src="./assets/img/ps-mark.png?v=82f9bd52" width="34" height="34" alt="">
+<span class="brand__name" aria-hidden="true">patryk-sadowski<span>.pl</span></span>
+</a>
+<nav id="site-nav" class="nav__links" aria-label="Main navigation">
+<a href="#ct-viewer">CT Viewer</a>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Other projects</a>
+<a href="#education">Education</a>
+<a href="#beyond">Beyond code</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="controls">
+<button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch light / dark theme" title="Switch theme">
+<svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+<svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+</button>
+<span class="divider" aria-hidden="true"></span>
+<div class="lang" role="group" aria-label="Language">
+<a href="./index.html" hreflang="en" lang="en" aria-current="true">EN</a>
+<a href="./pl/index.html" hreflang="pl" lang="pl">PL</a>
+</div>
+</div>
+<button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+<svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+<svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+</button>
+</div>
+</header>
+<main id="main">
+<section id="top" class="hero" aria-labelledby="hero-title">
+<div class="container">
+<div class="hero__grid">
+<div>
+<p class="status"><span class="dot" aria-hidden="true"></span>Open to Data / Backend / Fullstack roles · remote or hybrid</p>
+<h1 id="hero-title">Patryk Sadowski</h1>
+<p class="hero__role">Data Backend Engineer</p>
+<p class="hero__lead">I design Python and FastAPI services, data pipelines and storage layers for large, messy, real-world data — from SAP supply-chain flows at Signify to volumetric CT scans built for the National Centre for Nuclear Research.</p>
+<div class="hero__actions">
+<a class="btn btn--primary" href="#ct-viewer">My flagship project<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<a class="btn btn--ghost" href="./Patryk_Sadowski_CV.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV<span class="btn__meta">PDF</span></a>
+<div class="socials">
+<a href="https://github.com/SadowskiPatryk" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg></a>
+<a href="https://www.linkedin.com/in/patryk-sadowski3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+<a href="#contact" data-open-contact aria-label="Show email address"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+</div>
+</div>
+</div>
+<div class="terminal" id="terminal" role="group" aria-label="Interactive terminal. Type help.">
+<div class="terminal__bar"><button type="button" class="tdot tdot--close" aria-label="Close terminal"></button><button type="button" class="tdot tdot--min" aria-label="Minimise terminal" aria-expanded="true"></button><button type="button" class="tdot tdot--max" aria-label="Enlarge terminal"></button><span>patryk@portfolio — zsh</span></div>
+<div class="terminal__body">
+<div><span class="t-prompt">patryk@portfolio</span><span class="t-dim">:</span><span class="t-path">~</span><span class="t-dim">$</span> whoami</div>
+<div><span class="t-val">patryk-sadowski</span>  <span class="t-dim"># software engineer</span></div>
+<div> </div>
+<div><span class="t-prompt">patryk@portfolio</span><span class="t-dim">:</span><span class="t-path">~</span><span class="t-dim">$</span> cat stack.txt</div>
+<div><span class="t-key">backend</span>  python · fastapi · rest</div>
+<div><span class="t-key">data</span>     sql · snowflake · pandas</div>
+<div><span class="t-key">infra</span>    docker · linux · self-hosted</div>
+<div><span class="t-key">3d</span>       three.js · webgl</div>
+<div> </div>
+<div class="t-log" id="t-log" aria-live="polite"></div>
+<form class="t-line" id="t-form" autocomplete="off" data-unknown="command not found" data-hint="type 'help' for the list of commands" data-help="available: help, whoami, fastfetch, ls, cat &lt;file&gt;, clear" data-sudo="patryk is not in the sudoers file. This incident will be reported.">
+<label for="t-input"><span class="t-prompt">patryk@portfolio</span><span class="t-dim">:</span><span class="t-path">~</span><span class="t-dim">$</span></label>
+<input id="t-input" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Terminal command" placeholder="help">
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ct-viewer" class="section" aria-labelledby="ct-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Flagship project · Engineering thesis</p>
+<h2 id="ct-title">CT Viewer</h2>
+</div>
+<article class="ct-card reveal">
+<div class="award">
+<svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg>
+<div>
+<strong>Information Systems Engineering Award (Asseco Poland patronage)</strong>
+<p>Young Masters Competition (Konkurs Młodych Mistrzów) at Forum Teleinformatyki 2026. The team was also invited to present the project at the Ministry of Digital Affairs.</p>
+</div>
+</div>
+<div class="ct-grid">
+<div>
+<p class="ct-lead">Browser-based 3D visualization of industrial CT scans, powered by a scalable backend. Built by a team of four together with the National Centre for Nuclear Research (NCBJ).</p>
+<dl class="facts">
+<dt>Challenge</dt>
+<dd>Industrial computed tomography produces dense volumetric datasets used in non-destructive testing (NDT) and research. Exploring them interactively usually requires specialised desktop software.</dd>
+<dt>Approach</dt>
+<dd>Raw HDF5 scans are processed asynchronously by Python workers and stored in S3-compatible object storage. A FastAPI service only authorises access with presigned URLs, so the Flutter web client with Three.js and WebGL pulls slices, meshes and volumes straight from storage. All of it runs in Docker.</dd>
+<dt>Engineering highlights</dt>
+<dd>
+<ul class="bullets" role="list">
+<li>Ingest pipeline for HDF5 scans: downsampling to cap memory, Multi-Otsu segmentation, Marching Cubes and mesh decimation produce browser-sized 3D meshes</li>
+<li>Heavy processing runs in background workers, so the API stays responsive</li>
+<li>Object storage (MinIO / S3) with presigned URLs: the browser reads data directly, the API only authorises</li>
+<li>Interactive client for NDT inspection: three-plane 2D slices, 3D meshes with clipping and capping, WebGL volume rendering</li>
+</ul>
+</dd>
+<dt>My focus</dt>
+<dd>Backend architecture, API design, containerised delivery and DevOps, including the hosting setup.</dd>
+</dl>
+<ul class="chips" role="list" aria-label="Technologies">
+<li class="chip">Python</li>
+<li class="chip">FastAPI</li>
+<li class="chip">Docker</li>
+<li class="chip">MinIO (S3)</li>
+<li class="chip">Flutter Web</li>
+<li class="chip">Three.js</li>
+<li class="chip">WebGL</li>
+</ul>
+<div class="credits">
+<p><strong>Team:</strong> Patryk Sadowski, Michał Szaumkesel, Herbert Zaranek, Kacper Białas</p>
+<p><strong>Supervisors:</strong> dr Tomasz Piłka (UAM, Faculty of Mathematics and Computer Science), dr Konrad Klimaszewski (NCBJ)</p>
+</div>
+<div class="ct-links">
+<a class="link-arrow" href="https://www.linkedin.com/feed/update/urn:li:activity:7511096943398486017/" target="_blank" rel="noopener noreferrer">Read the announcement on LinkedIn<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+</div>
+</div>
+<figure class="viz">
+<iframe src="./viewer/index.html" title="Interactive CT Viewer demo: 3D mesh with clip planes and capping" loading="lazy"></iframe>
+<figcaption>Interactive demo in the style of CT Viewer: drag to rotate the part and use the sliders to cut it along the X, Y and Z axes. The part is synthetic and rendered in your browser.</figcaption>
+</figure>
+</div>
+<ol class="pipeline" role="list" aria-label="CT Viewer architecture">
+<li><strong>HDF5 scans</strong><span>Industrial CT data from NCBJ</span></li>
+<li><strong>Workers</strong><span>Python · NumPy · Marching Cubes, Multi-Otsu, mesh decimation</span></li>
+<li><strong>Object storage</strong><span>MinIO (S3): PNG slices, GLB / STL meshes</span></li>
+<li><strong>API</strong><span>FastAPI · presigned URLs · Docker</span></li>
+<li><strong>Browser client</strong><span>Flutter Web · Three.js · WebGL<br>volume rendering</span></li>
+</ol>
+</article>
+</div>
+</section>
+<section id="about" class="section" aria-labelledby="about-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Backend-minded · data-driven</p>
+<h2 id="about-title">About me</h2>
+</div>
+<div class="about-grid">
+<div class="prose">
+<p>I'm a final-year Computer Science student at Adam Mickiewicz University (B.Eng., defense planned for 02/2027), drawn to the backend side of data: APIs, pipelines, storage and the infrastructure that keeps them running.</p>
+<p>Day to day I move between worlds: SAP supply-chain data and reporting automation at Signify and 3D CT data tooling at NCBJ. That mix taught me what production data really looks like — and what keeps it reliable.</p>
+<p><strong>What I'm looking for:</strong> a Data / Backend Engineering role, ideally on a scientific or research-grade data platform where volume, reliability and reproducibility matter. Fullstack roles are welcome too.</p>
+</div>
+<div>
+<div class="stack">
+<div>
+<h3>Backend &amp; APIs</h3>
+<ul class="chips" role="list"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">REST</li></ul>
+</div>
+<div>
+<h3>Data &amp; storage</h3>
+<ul class="chips" role="list"><li class="chip">SQL</li><li class="chip">Snowflake</li><li class="chip">SQLite</li><li class="chip">MS SQL Server</li><li class="chip">MinIO (S3)</li></ul>
+</div>
+<div>
+<h3>Data engineering &amp; BI</h3>
+<ul class="chips" role="list"><li class="chip">SAP ERP</li><li class="chip">Power BI · DAX</li><li class="chip">Power Automate</li></ul>
+</div>
+<div>
+<h3>Scientific computing</h3>
+<ul class="chips" role="list"><li class="chip">NumPy</li><li class="chip">Pandas</li><li class="chip">SciPy</li><li class="chip">scikit-image</li><li class="chip">HDF5</li></ul>
+</div>
+<div>
+<h3>Infrastructure &amp; DevOps</h3>
+<ul class="chips" role="list"><li class="chip">Docker</li><li class="chip">Linux</li><li class="chip">Self-hosting</li><li class="chip">Windows Server</li></ul>
+</div>
+<div>
+<h3>Tooling &amp; quality</h3>
+<ul class="chips" role="list"><li class="chip">Git</li><li class="chip">GitHub Actions</li><li class="chip">pytest</li></ul>
+</div>
+<div>
+<h3>3D &amp; visualization</h3>
+<ul class="chips" role="list"><li class="chip">Three.js</li><li class="chip">WebGL</li><li class="chip">OpenGL</li></ul>
+</div>
+<div>
+<h3>ML &amp; IoT</h3>
+<ul class="chips" role="list"><li class="chip">Scikit-learn</li><li class="chip">Computer Vision</li><li class="chip">ESP32</li><li class="chip">Home Assistant</li><li class="chip">Zigbee2MQTT</li></ul>
+</div>
+</div>
+<p class="also"><strong>Also worked a little with:</strong> JavaScript, React, Next.js, Tailwind CSS, Flutter / Dart, WordPress, C#, C++</p>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="section" aria-labelledby="experience-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Where I've worked with real data</p>
+<h2 id="experience-title">Experience</h2>
+</div>
+<div class="stack-list">
+<article class="card reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Europe Inventory Operator · Data Analyst</h3>
+<p class="card__org">Signify</p>
+</div>
+<div class="card__side"><strong>01/2026 – Present</strong><span>Piła, Poland (Hybrid)</span></div>
+</div>
+<ul class="bullets" role="list">
+<li>Automating reporting workflows with Snowflake, Power BI (DAX) and Power Automate to speed up delivery tracking and cut manual work.</li>
+<li>Working with SAP ERP / WMS data, diagnosing system errors and inventory discrepancies and keeping data consistent across global logistics processes.</li>
+<li>Designing Warehouse AI Vision, a FastAPI-based computer-vision service for real-time stock reconciliation on mobile devices.</li>
+</ul>
+<ul class="chips" role="list"><li class="chip">SAP ERP</li><li class="chip">Snowflake</li><li class="chip">Power BI · DAX</li><li class="chip">Power Automate</li><li class="chip">FastAPI</li></ul>
+</article>
+<article class="card reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">IT Support Specialist (Junior)</h3>
+<p class="card__org">IT sp. z o.o.</p>
+</div>
+<div class="card__side"><strong>08/2023 – Present</strong><span>Poznań, Poland (Remote)</span></div>
+</div>
+<ul class="bullets" role="list">
+<li>Remote technical support and IT-systems care for bailiff offices and law firms.</li>
+<li>Administering Windows Server environments, maintaining data backups and information security.</li>
+<li>Diagnosing and resolving complex system, network and hardware issues.</li>
+</ul>
+<ul class="chips" role="list"><li class="chip">Windows Server</li><li class="chip">MS SQL Server</li><li class="chip">Backups</li><li class="chip">Security</li></ul>
+</article>
+</div>
+</div>
+</section>
+<section id="projects" class="section" aria-labelledby="projects-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Beyond CT Viewer</p>
+<h2 id="projects-title">Other projects</h2>
+</div>
+<div class="grid-2">
+<article class="card card--project reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Warehouse AI Vision</h3>
+<p class="card__org">Signify internal project</p>
+</div>
+<div class="card__side"><span class="badge badge--wip">In progress</span></div>
+</div>
+<p>A FastAPI service applying computer vision to recognise goods and reconcile stock discrepancies in real time, straight from mobile devices.</p>
+<ul class="chips" role="list"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">Computer Vision</li><li class="chip">Machine Learning</li></ul>
+</article>
+<article class="card card--project reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Forest Litter Moisture Model</h3>
+<p class="card__org">Research project · UAM</p>
+</div>
+<div class="card__side"><span class="badge">Completed</span></div>
+</div>
+<p>An end-to-end pipeline from sensor to prediction: ESP32 stations collect environmental data and a scikit-learn model forecasts litter moisture to support fire-risk monitoring.</p>
+<ul class="chips" role="list"><li class="chip">ESP32</li><li class="chip">IoT</li><li class="chip">Python</li><li class="chip">Scikit-learn</li></ul>
+</article>
+<article class="card card--project reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Kuźnik Reserve Trail Guide</h3>
+<p class="card__org">Academic project</p>
+</div>
+<div class="card__side"><span class="badge">Completed</span></div>
+</div>
+<p>A QR-driven web guide for the Kuźnik Nature Reserve in Piła: scanning a checkpoint serves localised content and text-to-speech audio. FastAPI backend, self-hosted.</p>
+<p><a class="link-arrow" href="https://rezerwat-kuznik.duckdns.org/" target="_blank" rel="noopener noreferrer">Live demo: rezerwat-kuznik.duckdns.org<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></p>
+<ul class="chips" role="list"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">TTS</li><li class="chip">QR codes</li><li class="chip">Self-hosting</li></ul>
+</article>
+<article class="card card--project reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Self-hosted client websites</h3>
+<p class="card__org">Commercial projects</p>
+</div>
+<div class="card__side"><span class="badge">Maintained</span></div>
+</div>
+<p>Delivery, hosting and ongoing administration of B2B websites (<a href="https://fhmajka.pl" target="_blank" rel="noopener noreferrer">fhmajka.pl</a>, <a href="https://wypozyczalnia-golden.com" target="_blank" rel="noopener noreferrer">wypozyczalnia-golden.com</a>) on self-managed server infrastructure.</p>
+<ul class="chips" role="list"><li class="chip">WordPress</li><li class="chip">Server administration</li><li class="chip">Self-hosting</li></ul>
+</article>
+</div>
+</div>
+</section>
+<section id="education" class="section" aria-labelledby="education-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Education &amp; community</p>
+<h2 id="education-title">Education</h2>
+</div>
+<div class="stack-list">
+<article class="card reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Adam Mickiewicz University in Poznań</h3>
+<p class="card__org">Bachelor of Engineering in Computer Science</p>
+</div>
+<div class="card__side"><strong>10/2023 – 02/2027</strong></div>
+</div>
+<p class="card__note">Engineering thesis: CT Viewer, developed with NCBJ. Defense planned for 02/2027.</p>
+<ul class="bullets bullets--sub" role="list">
+<li><strong>Vice President of the Student Council</strong>, Nadnotecki Institute of UAM in Piła (member 2024/25, VP 2025/26): student representation, academic events, scholarship committee.</li>
+<li><strong>Cybersecurity awareness trainer</strong>, 01/2026: a practical workshop for university administrative staff.</li>
+</ul>
+</article>
+<article class="card reveal">
+<div class="card__head">
+<div>
+<h3 class="card__title">Technical High School No. 2 in Wągrowiec</h3>
+<p class="card__org">IT Technician</p>
+</div>
+<div class="card__side"><strong>09/2019 – 05/2023</strong></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="beyond" class="section" aria-labelledby="beyond-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Tinkering is how I learn</p>
+<h2 id="beyond-title">Beyond the code</h2>
+</div>
+<ul class="tiles" role="list">
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-cpu"/></svg></span>
+<h3>Home lab &amp; IoT</h3>
+<p>Home Assistant, Zigbee2MQTT and ESP32: a smart home I build and run myself.</p>
+</li>
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-cube"/></svg></span>
+<h3>3D printing</h3>
+<p>3D printing on Bambu Lab, plus building and servicing machines.</p>
+</li>
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-server"/></svg></span>
+<h3>Self-hosted servers</h3>
+<p>I run my own servers for client websites and side projects, and administer everything myself.</p>
+</li>
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-wrench"/></svg></span>
+<h3>Cars &amp; ECU coding</h3>
+<p>Hands-on maintenance of Ford vehicles, including module coding with FORScan.</p>
+</li>
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-fish"/></svg></span>
+<h3>Aquariums &amp; terrariums</h3>
+<p>Aquariums and terrariums: tiny ecosystems that have to stay stable.</p>
+</li>
+<li class="tile reveal">
+<span class="tile__icon" aria-hidden="true"><svg class="icon"><use href="#i-drone"/></svg></span>
+<h3>Drone &amp; video</h3>
+<p>Aerial photo and video, with basic photo editing and video montage.</p>
+</li>
+</ul>
+</div>
+</section>
+<section id="contact" class="section" aria-labelledby="contact-title">
+<div class="container">
+<div class="section-head">
+<p class="eyebrow">Let's talk</p>
+<h2 id="contact-title">Contact</h2>
+</div>
+<div class="card contact reveal">
+<p>Open to Data / Backend / Fullstack roles and internships, remote or hybrid. The fastest way to reach me is LinkedIn or email.</p>
+<div class="contact__actions">
+<button class="btn btn--primary" type="button" data-open-contact><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Show email</button>
+<a class="btn btn--ghost" href="https://www.linkedin.com/in/patryk-sadowski3" target="_blank" rel="noopener noreferrer"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+<a class="btn btn--ghost" href="./Patryk_Sadowski_CV.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="current-year">2026</span> Patryk Sadowski</p>
+<p>Static site (no cookies, no trackers)</p>
+</div>
+</footer>
+<dialog id="contact-dialog" class="dialog" aria-labelledby="dialog-title">
+<div class="dialog__body">
+<button class="icon-btn dialog__close" type="button" data-close-dialog aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+<h2 id="dialog-title">Quick check</h2>
+<form id="captcha-form" novalidate autocomplete="off">
+<p>Solve this to reveal my email address:</p>
+<div class="captcha">
+<label class="captcha__q" for="captcha-input" id="captcha-question"></label>
+<input id="captcha-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" placeholder="?" required>
+</div>
+<p class="form-error" id="captcha-error" role="alert" hidden>Not quite — try again.</p>
+<button class="btn btn--primary" type="submit">Reveal email</button>
+</form>
+<div class="email-out" id="email-out" hidden>
+<svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+<p>Verified. Here is my email:</p>
+<a id="revealed-email"></a>
+<button class="btn btn--ghost" type="button" id="copy-email" data-copied="Copied"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy</span></button>
+</div>
+</div>
+</dialog>
+<script src="./assets/js/site.js?v=60334a68" defer></script>
 </body>
 </html>
